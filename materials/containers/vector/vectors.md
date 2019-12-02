@@ -2,7 +2,7 @@
 Vector is a kind of sequence in C++. You can create vector of any size you want and also you can
 modify vectors: add elements, erase elements and so on. Vectors are same as dynamic arrays with the ability to resize itself automatically.
 
-In this file you can find code snippets to work with vectors. Source code is avaliable [here](materials/containers/vector/vectors.cpp). 
+In this file you can find code snippets to work with vectors. Source code is avaliable [here](vectors.cpp). 
 More information and documentation are [here](https://en.cppreference.com/w/cpp/container/vector).
 
 

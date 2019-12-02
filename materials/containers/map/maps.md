@@ -50,4 +50,4 @@ Maps are associative containers that store elements in a mapped fashion. Each el
   ```
 
 
-You can find source code [here](materials/containers/map/maps.cpp) and more information [here](https://en.cppreference.com/w/cpp/container/map).
+You can find source code [here](maps.cpp) and more information [here](https://en.cppreference.com/w/cpp/container/map).

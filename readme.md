@@ -16,8 +16,7 @@ https://docs.google.com/spreadsheets/d/1i5lX0RsZ7ZsYQe22W-aa1WIckMBYvqBhVW5eWU5L
 ## Code snippets 
 - [Vector](materials/containers/vector/vectors.md)
 - [Map](materials/containers/map/maps.md)
-- [Set](materials/containers/set/sets.md)
-- 
+- [Set](materials/containers/set/sets.md) 
 
 ## Materials 
 Textbook – **Programming: Principles and Practice Using C++, Second Edition** (Bjarne Stroustrup)
