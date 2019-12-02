@@ -23,7 +23,7 @@ Sets are a type of associative containers in which each element has to be unique
   s.erase(10);
   ```
   
-  We can use range-based for to iterate through set
+  We can use range-based for to iterate through set. You can run source [code](materials/containers/set/sets.cpp) and see that set stores elements in sorted order.
   ```
   for (int x : s) {
     cout << x << ' ';
