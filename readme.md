@@ -16,7 +16,7 @@ https://docs.google.com/spreadsheets/d/1i5lX0RsZ7ZsYQe22W-aa1WIckMBYvqBhVW5eWU5L
 ## Code snippets 
 - [Vector](materials/containers/vector/vectors.md)
 - [Map]()
-- [Set]()
+- [Set](materials/containers/set/sets.md)
 - [STL Functions to work with containers]()
 
 ## Materials 

@@ -1,5 +1,5 @@
-// Here you can find basics about vectors
-// First of all don't forget to include <vector> !
+// Here you can find basics about vectors in STL
+// First of all don't forget to include <vector>!
 
 
 // Vector is a kind of sequence in C++. You can create vector of any size you want and also you can
@@ -10,7 +10,6 @@
 
 
 using namespace std;
-
 
 // Function to print vector to the console
 
