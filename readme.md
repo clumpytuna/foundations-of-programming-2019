@@ -6,7 +6,7 @@
 - [Task #2](https://contest.yandex.ru/contest/14805/standings) Deadline: 23:59, 4.11.2019 
 \ 50 points is enough to get the maximum
 - [Task #3](https://contest.yandex.ru/contest/15159/standings
-) Deadline: 23:59, 25.11.2019 \ 60 points is enough to get the maximum
+) No Deadline \ 60 points is enough to get the maximum
 - [Task #3 Advance](https://contest.yandex.ru/contest/15506/problems/) No deadline \ Extra contest
 
 ## List of students
