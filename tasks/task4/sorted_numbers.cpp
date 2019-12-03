@@ -6,7 +6,6 @@ using namespace std;
 
 
 class SortedNumbers {
-
  public:
   void AddNumber(int x) {
     // Write your code here
@@ -18,12 +17,12 @@ class SortedNumbers {
 
  private:
   // create fields here
-
 };
 
 
 int main() {
 
+  // Read n numbers
   int n;
   cin >> n;
 
@@ -35,6 +34,8 @@ int main() {
     numbers.AddNumber(x);
   }
 
+
+  // Write sorted num
   for (int s: numbers.getSortedNumbers()) {
     cout << s << ' ';
   }
