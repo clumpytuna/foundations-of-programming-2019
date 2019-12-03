@@ -1,26 +1,31 @@
+
 #include <vector>
 #include <iostream>
-
 
 using namespace std;
 
 
 class SortedNumbers {
+
  public:
-  void AddNumber(int n) {
-    // Add number
+  void AddNumber(int x) {
+    // Write your code here
   }
-  vector<int> GetSortedNumbers() {
-    // get all numbers in sorted order
+
+  vector<int> getSortedNumbers() {
+    // Write your code here
   }
+
  private:
-  // private fields
+  // create fields here
+
 };
 
 
 int main() {
-  int n;
 
+  int n;
+  cin >> n;
 
   SortedNumbers numbers;
 
@@ -30,10 +35,8 @@ int main() {
     numbers.AddNumber(x);
   }
 
-
-  for (int n: numbers.GetSortedNumbers()) {
-    cout << n;
+  for (int s: numbers.getSortedNumbers()) {
+    cout << s << ' ';
   }
 
-  return 0;
 }
