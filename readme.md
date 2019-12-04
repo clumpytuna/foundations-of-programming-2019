@@ -25,4 +25,4 @@ Textbook – **Programming: Principles and Practice Using C++, Second Edition** 
 - [Map](materials/containers/map/maps.md)
 - [Set](materials/containers/set/sets.md) 
 #### OOP
-- [Structures](materials/object-oriented-programming/structures/structures.md)
+- [Structures](materials/object-oriented-programming/structures_and_classes/structures_and_classes.md)
