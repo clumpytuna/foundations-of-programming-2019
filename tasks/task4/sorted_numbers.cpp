@@ -1,9 +1,7 @@
-
 #include <vector>
 #include <iostream>
 
 using namespace std;
-
 
 class SortedNumbers {
  public:
@@ -19,9 +17,7 @@ class SortedNumbers {
   // create fields here
 };
 
-
 int main() {
-
   SortedNumbers numbers;
 
   numbers.AddNumber(-1);
@@ -32,7 +28,5 @@ int main() {
   for (int s: numbers.getSortedNumbers()) {
     cout << s << ' ';
   }
-
   return 0;
-
 }

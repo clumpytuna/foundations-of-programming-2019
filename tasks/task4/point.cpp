@@ -16,7 +16,5 @@ int main() {
   Point b = {4.0, 3.0};
 
   cout << "Distance between a and b is:" << GetDistance(a, b);
-
   return 0;
-
 }
