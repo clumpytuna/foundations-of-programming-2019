@@ -1,14 +1,12 @@
 # Structures and Classes in C++
 
- Here you can find information about Structures and Classes in C++.
-
 ## Structures
 
 We often come around situations where we need to store a group of data whether of similar data types or non-similar data types. Structures in C++ are user defined data types which are used to store group of items of non-similar data types. A structure is a user-defined data type in C/C++. A structure creates a data type that can be used to group items of possibly different types into a single type.
 
 **Let's consider some examples with structures**
 
-  ####_How to create a structure_?
+  #### _How to create a structure_?
 
   The ‘struct’ keyword is used to create a structure. The general syntax to create a structure is as shown below:
 
@@ -60,7 +58,7 @@ Person GetPerson() {
 }
 ```
 
-####_What if we create a structure and want to use it inside other structure?_
+#### _What if we create a structure and want to use it inside other structure?_
 ```
 struct PersonInfo {
   string place_of_birth;
@@ -78,7 +76,7 @@ struct DetailedPerson {
 ```
 
 
-####_How can we declare and initialize a variable of our new type?_
+#### _How can we declare and initialize a variable of our new type?_
 
 The easiest way to do it is to define a variable. Then initialize each field. You can access fields using following syntax name_of_variable.name_of_fields
   ```
@@ -120,9 +118,9 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
   **You can find source code [here](structures.cpp) and more information [here](https://en.cppreference.com/w/c/language/struct).**
 
 
-  ##Classes
+  ## Classes
   
-   A class in C++ is the building block, that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object.
+  A class in C++ is the building block, that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object.
   
   Let's write a program to work with routes between cities. Every route consist of two strings: city destination name and city source name.
   
@@ -185,7 +183,9 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    struct Route {
     public:
       string GetSource() { return source; }
-      string GetDestination() { return destination; } int GetLength() { return length; }
+      string GetDestination() { return destination; }
+      int GetLength() { return length; }
+    
     private:
       string source;
       string destination;
@@ -211,7 +211,9 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    class Route { // class instead of struct 
     public:
       string GetSource() { return source; }
-      string GetDestination() { return destination; } int GetLength() { return length; }
+      string GetDestination() { return destination; }
+      int GetLength() { return length; }
+    
     private:
       string source;
       string destination;
@@ -230,6 +232,62 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    ```
    
    ***Class*** hides data and provides a specific interface for accessing data. It is used if the fields are connected with each other and this connection needs to be controlled. An example of a class is the Route class described above.
+   
+   
+   
+   In the discussed example, the fields of the Route class were made private to make the use of the class more secure. But now we can't change an instance of the class. To provide a way to change fields, we need to write some more public methods:
+   - SetSource — to change the source.
+   - SetDestination — to change the destination.
+   
+   In both methods, we must remember to update the route length. The best way to do it is to write UpdateLength method. The method should be available only inside the class, so let's make it private:
+   
+   ```
+   class Route {
+    public:
+   
+     string GetSource() {
+       return source;
+     }
+   
+     string GetDestination() {
+       return destination;
+     }
+   
+     int GetLength() {
+       return length;
+     }
+   
+     void SetSource(const string& new_source) {
+       source = new_source;
+       UpdateLength();
+     }
+   
+     void SetDestination(const string& new_destination) {
+       destination = new_destination;
+       UpdateLength();
+     }
+   
+    private:
+     void UpdateLength() {
+       length = ComputeDistance(source, destination);
+     }
+   
+     string source;
+     string destination;
+     int length;
+   };
+   ```
+   
+   Thus, we created the class and can use it in the following way: 
+   ```
+   Route route;
+   route.SetSource("Moscow");
+   route.SetDestination("Dubna");
+   cout << "Route from " <<
+       route.GetSource() << " to " <<
+       route.GetDestination() << " is " <<
+       route.GetLength() << " meters long";
+   ```
    
    **You can find source code [here](classes.cpp) and more information [here](https://en.cppreference.com/w/cpp/language/classes).**
     

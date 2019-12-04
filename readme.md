@@ -4,10 +4,10 @@
 - [Task #1](https://contest.yandex.ru/contest/14691/enter/
 ) Deadline: 9:00, 22.10.2019
 - [Task #2](https://contest.yandex.ru/contest/14805/standings) Deadline: 23:59, 4.11.2019 
-\ 50 points is enough to get the maximum
+| 50 points is enough to get the maximum
 - [Task #3](https://contest.yandex.ru/contest/15159/standings
-) No Deadline \ 60 points is enough to get the maximum
-- [Task #3 Advance](https://contest.yandex.ru/contest/15506/problems/) No deadline \ Extra contest
+) No Deadline | 60 points is enough to get the maximum
+- [Task #3 Advance](https://contest.yandex.ru/contest/15506/problems/) No deadline | Extra contest
 - [Task #4](tasks/task4/description.md) Deadline 17.12.2019
 ## List of students
 Please write your name, email, telegram and yandex.contest login here:
@@ -25,4 +25,4 @@ Textbook – **Programming: Principles and Practice Using C++, Second Edition** 
 - [Map](materials/containers/map/maps.md)
 - [Set](materials/containers/set/sets.md) 
 #### OOP
-- [Structures](materials/object-oriented-programming/structures_and_classes/structures_and_classes.md)
+- [Structures and Classes](materials/object-oriented-programming/structures_and_classes/structures_and_classes.md)
