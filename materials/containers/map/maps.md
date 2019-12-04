@@ -6,18 +6,18 @@ Maps are associative containers that store elements in a mapped fashion. Each el
 
 
   Create map with integer keys and string values
-  ```
+  ```c++
   map<int, string> events;
   ```
   Adding elements in map
-  ```
+  ```c++
   events[1946] = "Freddie Mercury's birth";
   events[1958] = "Michael Jackson's birth";
   events[1970] = "UNIX epoch start";
   ```
   Let's iterate through the map.
   You can access key of element use item.first. Use item.second to access value of element.
-  ```
+  ```c++
   for (auto item: events) {
     cout << item.first << ": " << item.second << endl;
   }
@@ -25,13 +25,13 @@ Maps are associative containers that store elements in a mapped fashion. Each el
   ```
   
   Each element of map is a pair
-  ```
+  ```c++
   for (pair<int, string> item: events) {
     cout << item.first << ": " << item.second << endl;
   }
   ```
   Since C++ 17 you can write loop through map more expressive
-  ```
+  ```c++
   for (const auto& [key, value] : m) {
     cout << key << ' ' << value;
   }
@@ -39,13 +39,13 @@ Maps are associative containers that store elements in a mapped fashion. Each el
 
 
   To delete elements from map use .erase method
-  ```
+  ```c++
   events.erase(1946);
   ```
   
   To check if map contains element with certain key you can use .count method.
   Map contains only one copy of any element so .count returns 0 or 1.
-  ```
+  ```c++
   cout << events.count(1946) << endl;
   ```
 

@@ -10,7 +10,7 @@ We often come around situations where we need to store a group of data whether o
 
   The ‘struct’ keyword is used to create a structure. The general syntax to create a structure is as shown below:
 
-```
+```c++
  struct structureName{
     type member1;
     type member2;
@@ -21,7 +21,7 @@ We often come around situations where we need to store a group of data whether o
 ```
 
 Let's create our own structure. For example we want to have the type to represent a person.
-```
+```c++
 struct Person {
   string first_name;
   string last_name;
@@ -31,7 +31,7 @@ struct Person {
 
 Now we can work with our structure and use it as built-in data type.
 Let's write a function to write information about a person.
-```
+```c++
 void PrintPerson(const Person& person) {
   cout << "First Name: " << person.first_name <<
        ", Last Name: " << person.last_name <<
@@ -41,7 +41,7 @@ void PrintPerson(const Person& person) {
 
 Function to print information about set of persons.
 
-```
+```c++
 void PrintPersons(
     const vector<Person>& persons) {
   for (Person person : persons) {
@@ -51,7 +51,7 @@ void PrintPersons(
 ```
 
 We can write a function that returns certain person. 
-```
+```c++
 Person GetPerson() {
   // Here we create a structure using braces.
   return {"Bjarne", "Stroustrup", 1950};
@@ -59,7 +59,7 @@ Person GetPerson() {
 ```
 
 #### _What if we create a structure and want to use it inside other structure?_
-```
+```c++
 struct PersonInfo {
   string place_of_birth;
   int year_of_birth;
@@ -67,7 +67,7 @@ struct PersonInfo {
 ```
 
 We can easily do it. We can use our custom type everywhere as built-in C++ data types.
-```
+```c++
 struct DetailedPerson {
   string first_name;
   string last_name;
@@ -79,7 +79,7 @@ struct DetailedPerson {
 #### _How can we declare and initialize a variable of our new type?_
 
 The easiest way to do it is to define a variable. Then initialize each field. You can access fields using following syntax name_of_variable.name_of_fields
-  ```
+  ```c++
   Person first_person;
   first_person.first_name = "Bjarne";
   first_person.last_name = "Stroustrup";
@@ -90,27 +90,27 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
 
   There is the shorter way to do it.
   Write braces and values of fields in the same order that we defined.
-  ```
+  ```c++
   Person second_person = {"Dennis", "Ritchie", 1941};
   ```
 
   We can construct structure in place. Without creating a variable.
-  ```
+  ```c++
   PrintPerson({"Dennis", "Ritchie", 1941});
   ```
   
   If function returns structure we can initialize variable like this
-  ```
+  ```c++
   Person certain_person = GetPerson();
   ```
 
   To create nested structure we can use already known syntax
-  ```
+  ```c++
   PersonInfo info = {"Maida Vale", 1912};
   DetailedPerson third_person = {"Alan", "Turing", info};
   ```
   To access inner fields you can use expected syntax
-  ```
+  ```c++
   cout << third_person.info.place_of_birth << endl;
   ```
   
@@ -126,7 +126,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
   
   
   Let's define structure:
-  ```
+  ```c++
   struct Route {
     string source;
     string destination;
@@ -134,14 +134,14 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
   ```
   
   Also we are given a function to compute the distance 
-  ```
+  ```c++
   int ComputeDistance(
     const string& source,
     const string& destination);
   ```
   
   Someone already implemented this function for us, and computing this function takes a long time. Calculating a distance is expensive, so it needs to be stored somewhere. Let's create a new field in the structure.
-  ```
+  ```c++
   struct Route {
     string source;
     string destination;
@@ -158,7 +158,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    We want to minimize a probability of errors, that's why we need to forbid public access to the fields.
    
    We can define private section:
-   ```
+   ```c++
    struct Route {
      private:
        string source;
@@ -169,7 +169,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    
    There is no access to the fields from outside of the structure:
    
-   ```
+   ```c++
     Route route;
     route.source = "Moscow";  // This line cause an error
     cout << route.length; // As well as this line
@@ -179,7 +179,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
 
     
    Let's add methods to the structure so that it becomes more functional:
-   ```
+   ```c++
    struct Route {
     public:
       string GetSource() { return source; }
@@ -198,7 +198,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    To define a method use the following syntax: write returning type, name of a method, then write a body in braces.
    
    Now we can use new methods like this:
-   ```
+   ```c++
    Route route;
    cout << route.GetLength();
    // We have an access to read
@@ -207,7 +207,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    ```
    In fact, a structure with private or public sections and methods is formally not a structure, but a class. Therefore, instead of the struct keyword, it is better to use class keyword:
    
-   ```
+   ```c++
    class Route { // class instead of struct 
     public:
       string GetSource() { return source; }
@@ -224,7 +224,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    It will increase the readability of the code, as the following agreement exists:
    
    ***Structure*** (struct) is a set of public fields. It is used if you do not need to control the consistency. A typical example of the structure is:
-   ```
+   ```c++
    struct Point {
     double x;
     double y;
@@ -241,7 +241,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    
    In both methods, we must remember to update the route length. The best way to do it is to write UpdateLength method. The method should be available only inside the class, so let's make it private:
    
-   ```
+   ```c++
    class Route {
     public:
    
@@ -279,7 +279,7 @@ The easiest way to do it is to define a variable. Then initialize each field. Yo
    ```
    
    Thus, we created the class and can use it in the following way: 
-   ```
+   ```c++
    Route route;
    route.SetSource("Moscow");
    route.SetDestination("Dubna");

@@ -6,11 +6,11 @@ Sets are a type of associative containers in which each element has to be unique
 **Let's consider some examples with sets**
 
   Create empty set container
-  ```
+  ```c++
   set<int> s;
   ```
   Insert elements in random order
-  ```
+  ```c++
   s.insert(10);
   s.insert(20);
   s.insert(30);
@@ -19,25 +19,25 @@ Sets are a type of associative containers in which each element has to be unique
   ```
 
   Remove elements from set
-  ```
+  ```c++
   s.erase(10);
   ```
   
   We can use range-based for to iterate through set. You can run source [code](materials/containers/set/sets.cpp) and see that set stores elements in sorted order.
-  ```
+  ```c++
   for (int x : s) {
     cout << x << ' ';
   }
   cout  << endl;
   ```
   We can't access elements by index. Elements have no index
-  ```
+  ```c++
    // This code cause an error
    s[0] = 15;
    
   ```
   To check if set contains element you can use .count method. Set contains only one copy of any element so .count returns 0 or 1.
-  ```
+  ```c++
   if (s.count(10)) {
     cout << "s contains 10" << endl;
   } else {
