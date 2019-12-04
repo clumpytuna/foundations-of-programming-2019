@@ -22,22 +22,17 @@ class SortedNumbers {
 
 int main() {
 
-  // Read n numbers
-  int n;
-  cin >> n;
-
   SortedNumbers numbers;
 
-  for (int i = 0; i < n; ++i) {
-    int x;
-    cin >> x;
-    numbers.AddNumber(x);
-  }
+  numbers.AddNumber(-1);
+  numbers.AddNumber(2);
+  numbers.AddNumber(3);
+  numbers.AddNumber(-4);
 
-
-  // Write sorted num
   for (int s: numbers.getSortedNumbers()) {
     cout << s << ' ';
   }
+
+  return 0;
 
 }
