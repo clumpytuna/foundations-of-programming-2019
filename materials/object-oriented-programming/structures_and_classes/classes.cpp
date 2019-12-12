@@ -1,6 +1,13 @@
 // Here you can find examples of using classes in C++
 
 #include <string>
+#include <iostream>
+
+using namespace std;
+
+double ComputeDistance(const string& source, const string& destination) {
+  return 0.0;
+}
 
 // Class to work with routes between two cities
 class Route {
@@ -42,11 +49,9 @@ class Route {
 int main() {
   Route route;
   route.SetSource("Moscow");
-  route.SetDestination("Dubna");
+  route.SetDestination("Saint Petersburg");
   cout << "Route from " <<
       route.GetSource() << " to " <<
-      route.GetDestination() << " is " <<
-      route.GetLength() << " meters long";
-
+      route.GetDestination() << endl;
   return 0;
 }
