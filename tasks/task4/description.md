@@ -33,7 +33,7 @@ Distance between x and y is 5
 ```
 
 
-Here you can find a solution template: [point.cpp](point.cpp)
+_**Here you can find a solution template: [point.cpp](point.cpp)**_
 
 ## Problem B
 
@@ -81,7 +81,7 @@ for (int s: numbers.getSortedNumbers()) {
 ```
 
 
-Here you can find a solution template: [sorted_numbers.cpp](sorted_numbers.cpp)
+_**Here you can find a solution template: [sorted_numbers.cpp](sorted_numbers.cpp)**_
 
 
 
@@ -151,4 +151,4 @@ My new number is: 8-900-800-70-60
 8-800-555-35-35 is the phone number of Freddy Mercury
 ```
 
-Here you can find a solution template: [phonebook.cpp](phonebook.cpp)
+_**Here you can find a solution template: [phonebook.cpp](phonebook.cpp)**_
