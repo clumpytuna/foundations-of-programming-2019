@@ -23,6 +23,12 @@ Textbook – **Programming: Principles and Practice Using C++, Second Edition** 
 [C++ Documentation](https://en.cppreference.com/w/)
 
 ### Code snippets
+#### Functions 
+- [Functions](materials/functions/functions.cpp)
+
+#### Files
+- [Work with files](materials/work_with_files/work_with_files.cpp)
+
 #### Containers 
 - [Vector](materials/containers/vector/vectors.md)
 - [Map](materials/containers/map/maps.md)
