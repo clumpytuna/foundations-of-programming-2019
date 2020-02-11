@@ -8,7 +8,7 @@ We often come around situations where we need to store a group of data whether o
 
 **Let's consider some examples with structures**
 
-  #### _How to create a structure_?
+  #### _How to define a structure_?
 
   The ‘struct’ keyword is used to create a structure. The general syntax to create a structure is as shown below:
 
